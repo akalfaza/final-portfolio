@@ -76,8 +76,7 @@ nav .fas{
 
 .text h1{
     font-size: 60px;
-    margin-top:5px;
-    /* margin-top was 20px before the emojis */
+    margin-top:20px;
     font-weight: 500px;
 }
 
@@ -105,6 +104,10 @@ nav .fas{
     padding: 30px 20%;
 }
 
+.container-2 a{
+    text-decoration: none;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -124,6 +127,11 @@ nav .fas{
     color:#5309bb;
 }
 
+.sub-sub-title{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
 .part-1-col-1{
     /* margin-top: 20%; */
 }
@@ -138,21 +146,11 @@ nav .fas{
     padding-top: 20px;
 }
 
-.figma-screen{
-    /* max-width: 1000px; */
-    position: relative;
-    margin:auto;
-    margin-top: 20px;
-    border: 1px solid rgba(0,0,0,0.1);
-    max-width:1000px;
-    height:550px;
-    border-radius: 10px;
-}
 
-/* .part-1-col-2 img{
-    width: 100%;
-    border-radius: 15px;
-} */
+.container-2 img{
+    width:100%;
+    margin-top: 30px;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -215,13 +213,13 @@ nav .fas{
   }
    */
 
-  .number {
+  /* .number {
     color: #000000;
     font-size: 16px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+  } */
   
 
   .dot {
