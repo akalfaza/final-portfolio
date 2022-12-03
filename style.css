@@ -8,7 +8,7 @@
 body{
     /* background: rgb(238,238,238);
     background: linear-gradient(90deg, rgb(247, 240, 240) 0%, rgb(249, 213, 239) 54%, rgb(195, 240, 246) 86%); */
-    background:#d0aeff24;
+    /* background:#d0aeff24; */
 }
 
 /* #header{
@@ -74,14 +74,20 @@ nav .fas{
 }
 
 .text{
-    margin-top: 15%;
-    font-size: 30px;
+    /* margin-top: 15%; */
+    margin-top: 140px;
+    font-size: 25px;
 }
 
 .text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top:20px;
 }
+
+.text h2{
+    margin-top:20px;
+}
+
 
 .location{
     color:#5309bb;
@@ -95,6 +101,7 @@ nav .fas{
     color:#5309bb;
 }
 
+
 .school a{
     text-decoration: none;
     color: #5309bb;
@@ -102,7 +109,12 @@ nav .fas{
 
 
 #portfolio{
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
+    margin-top:100px;
+}
+
+.sub-title{
+    font-size: 30px;
 }
 
 .work-list{
@@ -113,9 +125,29 @@ nav .fas{
     margin-top:50px;
 }
 
+.work-container{
+    margin-bottom:50px;
+}
+
+
+.caption-wrapper{
+    display:block;
+}
+
+.img-caption{
+    display:block;
+    margin-top: 40px;
+}
+
+.img-caption h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
 .work{
     box-shadow: 1px 1px 25px 1px rgba(139, 139, 139, 0.116);
-    border-radius: 10px;
+    /* can change it back to 10px*/
     position: relative;
     overflow:hidden;
 }
@@ -123,7 +155,8 @@ nav .fas{
 .work img{
     /* box-shadow: 2px 2px 25px 2px rgba(139, 139, 139, 0.89); */
     width: 100%;
-    border-radius: 10px;
+    height: 350px;
+    border-radius: 0px;
     display: block;
     transition: transform 0.5s;
 }
@@ -133,8 +166,7 @@ nav .fas{
     width: 100%;
     height: 0;
     background: white;
-    /* background: linear-gradient(rgba(255, 255, 255, 0.488),#5309bb); */
-    border-radius: 10px;
+    border-radius: 0px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -145,9 +177,11 @@ nav .fas{
     justify-content: center;
     text-align: center;
     padding:0 40px;
+    /* color:white; */
 }
 
 .description h3{
+    /* color:white; */
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -166,7 +200,50 @@ nav .fas{
     position: relative;
 }
 
+#footer{
+    background-color: #5309bb40;
+    margin-top: 30px;
+}
 
+.footer-nav-container{
+    display: block;
+}
+
+.footer-nav{
+    display: block;
+}
+
+.footer-nav a{
+    display: inline-block;
+    color:black;
+    margin:5px;
+    font-size: 20px;
+    text-decoration:none;
+    background-image: linear-gradient(black,black);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: left bottom;
+}
+
+.footer-nav a strong{
+    font-weight: bold;
+}
+
+.social{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+
+}
+.social a{
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 20px;
+    color:black;
+    font-size: 30px;
+    text-decoration:none;
+
+}
 /* ----------- media query for tablet/mobile-------*/
 
 
@@ -195,15 +272,18 @@ nav .fas{
     }
 
     nav ul{
-        background: rgb(224, 123, 123);
+        /* background: rgb(224, 123, 123); */
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden;
         position: fixed;
         top:0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
+        right: 0;
+        width: 0%;
+        height: 100%;
         padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
+        z-index: 1;
+        transition: 0.5s;
     }
 
     nav ul li{
@@ -211,11 +291,18 @@ nav .fas{
         margin: 25px;
     }
 
+    nav ul li a{
+        color:white;
+
+    }
+
     nav ul .fas{
         position: absolute;
-        top: 25px;
-        left:25px;
+        top: 35px;
+        left:360px;
+        float: left;
         cursor: pointer;
+        color:white;
     }
 
     .work-list{
