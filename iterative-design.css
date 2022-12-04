@@ -2,11 +2,13 @@
     margin:0;
     padding:0;
     font-family: "Avenir";  
+    line-height: 1.5;
     box-sizing:border-box;
 }
 
 body{
-    background:#d0aeff24;
+    /* background:#d0aeff24; */
+    background: white;
 }
 
 .container-1{
@@ -63,6 +65,35 @@ nav .fas{
     display:none;
 }
 
+.container-2{
+    padding: 30px 15%;
+}
+
+.info-row{
+    margin-top: 20px;
+    display: block;
+}
+
+.info-col{
+    margin-top:10px;
+    margin-right:60px;
+    display: block;
+    float:left;
+}
+
+.info-col-title{
+    font-size:18px;
+}
+
+.info{
+    margin-top:10px;
+}
+
+.info p{
+    margin-top:5px;
+}
+
+
 
 .text{
     margin-top: 5%;
@@ -78,31 +109,31 @@ nav .fas{
     font-size: 60px;
     margin-top:5px;
     /* margin-top was 20px before the emojis */
-    font-weight: 500px;
+    font-weight: 600;
 }
 
 .introduction{
-    margin-top: 10%;
+    margin-top: 60px;
+    background-color: #F4F4F4;
+    margin-bottom: 60px;
 }
 
 .introduction-title{
-    margin-top:20px;
-    font-size: 36px;
-    font-weight: 500;
+    margin-top:10px;
+    font-size: 30px;
+    /* font-weight: 500px; */
+    font-weight: 600;
 }
 
-.introduction p{
+.introduction-parag{
     margin-top:20px;
+    margin-bottom: 20px;
 }
 
 
-#part-1{
+#part-1{ 
     padding: 80px 0px;
     color:black;
-}
-
-.container-2{
-    padding: 30px 20%;
 }
 
 .row{
@@ -112,15 +143,17 @@ nav .fas{
 }
 
 .part-1-title{
-    margin-top:20px;
+    /* margin-top:20px;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 500; */
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .sub-title{
     margin-top:20px;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700px;
     color:#5309bb;
 }
 
