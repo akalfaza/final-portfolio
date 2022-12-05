@@ -66,7 +66,7 @@ nav .fas{
 }
 
 .container-2{
-    padding: 30px 15%;
+    padding: 25px 15%;
 }
 
 .info-row{
@@ -94,7 +94,6 @@ nav .fas{
 }
 
 
-
 .text{
     margin-top: 5%;
 }
@@ -115,7 +114,7 @@ nav .fas{
 .introduction{
     margin-top: 60px;
     background-color: #F4F4F4;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .introduction-title{
@@ -131,9 +130,8 @@ nav .fas{
 }
 
 
-#part-1{ 
-    padding: 80px 0px;
-    color:black;
+#part{ 
+    /* padding: 10px 0px; */
 }
 
 .row{
@@ -152,8 +150,8 @@ nav .fas{
 
 .sub-title{
     margin-top:20px;
-    font-size: 24px;
-    font-weight: 700px;
+    font-size: 20px;
+    font-weight: 500;
     color:#5309bb;
 }
 
@@ -161,14 +159,36 @@ nav .fas{
     /* margin-top: 20%; */
 }
 
+.part-1-col-1 img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.small-row{
+    display: block;
+}
+
+.small-col{
+    display: block;
+    float:left;
+    width:50%;
+    /* margin-left:10px; */
+}
+
 .part-1-col-1 ul{
     margin-top:20px;
-    padding-left:40px;
+    padding-left:50px;
+    list-style-type: circle;
+}
+
+.part-1-col-1 ul li{
+    margin-top:10px;
 }
 
 .part-1-col-1 p{
     font-size: 16px;
     padding-top: 20px;
+    
 }
 
 .figma-screen{
@@ -338,5 +358,15 @@ nav .fas{
       .number {
         font-size: 10px;
       }
+
+    /* .small-row{
+        display: block;
+    } */
+    
+    .small-col{
+        /* display: flex; */
+        /* float:none; */
+        width:100%;
+    }
   
 }
