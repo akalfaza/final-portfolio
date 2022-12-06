@@ -164,9 +164,9 @@ nav .fas{
 }
 
 .part-1-col-1 img{
-    margin-top: 50px;
+    margin-top: 40px;
     /* eskiden 40px di top ve bottom */
-    margin-bottom: 50px;
+    /* margin-bottom: 10px; */
 }
 
 .small-row{
@@ -393,7 +393,7 @@ nav .fas{
     .small-col{
         width:100%;
     }
-    
+
     .end img{
         opacity:0.25;
         width:120%;
