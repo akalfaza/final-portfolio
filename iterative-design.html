@@ -29,13 +29,14 @@
         </div>
     </div>
 
+    <img class="presentation" src="./pics/hello_design_presentation.jpg" style="width:100%;" alt="Design Presentation">
 
     <div id="part">
         <!-- <div class="container-2"> -->
 
         <div class="row">
             <div class="container-2">
-                <img src="./pics/hello_design_presentation.jpg" style="width:100%;" alt="Design Presentation">
+                <!-- <img src="./pics/hello_design_presentation.jpg" style="width:100%;" alt="Design Presentation"> -->
                 <div class="text">
                     <h1 class="assignment-title"> Iterative Design for Hello </h1>
                     <div class="info-row">
@@ -207,9 +208,6 @@
 
                     </div>
 
-                    <!-- <iframe class="figma-screen"
-                        src="https://www.figma.com/proto/lRpub3LGDvUZkBJ05dRESl/Hello?embed_host=share&kind=&node-id=127%3A102&page-id=0%3A1&scaling=scale-down&starting-point-node-id=127%3A102&viewport=752%2C-255%2C0.22"
-                        style="width:100%" allowfullscreen></iframe> -->
                 </div>
             </div>
 
@@ -233,14 +231,33 @@
                         interactive mockup.
                     </p>
 
-
+                    <!--instructions -->
                     <h1 class="sub-title">Testing Instructions</h1>
                     <p>
                         The testing instructions were the following:
                     </p>
+                    <ul style="list-style-type:upper-roman;">
+                        <li>Without leaving the homepage, what are your initial impressions of the design and the functionalities available? Be specific. </li>
+                        <li>Start your search by choosing Java as your intended language. Tell us how you selected it. Comment on the intuitivity of this step.</li>
+                        <li>Search “How to implement Dijkstra's algorithm” by clicking the correct suggestion in the dropdown menu.</li>
+                        <li>Scroll through the pages. Comment on the dual layout of the search results. Describe in your own words how you might benefit from using this page.</li>
+                        <li>Navigate to “Web Answers.” Comment on the design of this page.</li>
+                        <li>Change your display to “Hello Answers.” Describe what you expect to find on this page. Comment both on the design and benefits of this view.</li>
+                        <li>Go to the first referenced source link.</li>
 
-                    <!-- add instructions -->
-                    <!-- add figma setup -->
+                    </ul>
+
+                    <!-- figma setup -->
+                    <h2 class="sub-sub-title" style="margin-top:40px; font-size: 18px; font-weight: 600; color:#949494;">Figma Flow Setup</h2>
+                    <img src="./pics/figma setup.png" style="width:100%; margin-top:10px; margin-bottom:0px;" alt="Figma Flow Setup">
+
+
+
+                    <!-- figma -->
+                    <iframe class="figma-screen"
+                        src="https://www.figma.com/proto/lRpub3LGDvUZkBJ05dRESl/Hello?embed_host=share&kind=&node-id=127%3A102&page-id=0%3A1&scaling=scale-down&starting-point-node-id=127%3A102&viewport=752%2C-255%2C0.22"
+                        style="width:100%" allowfullscreen></iframe>
+
 
                     <h1 class="sub-title">Analysis of Results</h1>
                     <p>
@@ -275,56 +292,60 @@
     </div>
 
     <div id="part">
+
+        <div class="end">
+            <img src="./pics/slide-3.jpg">
+            <div class="container-2">
+                <h3 class="end-title">Hello Final Concept</h3>
+            </div>
+        </div>
+
         <div class="container-2">
             <div class="row">
                 <h1 class="part-1-title">Final Concept</h1>
                 <div class="part-1-col-1">
                     <h1 class="sub-title">The Task</h1>
                     
-                    <h1 class="sub-title">Future Considerdations</h1>
-                    <!-- <p>
+                    
+                    <p>
                         Based on this feedback, we would definitely give less space to the web results.
                         It was mentioned multiple times that the main draw of the platform is the hello answers,
                         so the web answers can be deprioritized since users can just go to Google if they wanted that.
-                    </p> -->
+                    </p>
                 </div>
             </div>
 
         </div>
     </div>
 
+    <div id="footer">
+        <div class="container">
+
+            <div class="footer-nav-container">
+                <p class="footer-nav" style="text-align:center;">
+                    <a href="./index.html">
+                        <strong>Home</strong>
+                    </a>
+                    <a href="./about.html">
+                        <strong>About</strong>
+                    </a>
+                    <a href="./resume.pdf" target="_blank">
+                        <strong>Resume</strong>
+                    </a>
+                </p>
+            </div>
+            
+
+            <div class="social">
+                    <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/alara-kalfazade-bba247237/" target="_blank"></a>
+                    <a class="fa fa-envelope" href="mailto:alara_kalfazade@brown.edu"></a>
+            </div>
+
+        </div>
+
+    </div>
 
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
     <script>
         var menu = document.getElementById("menu");
@@ -335,7 +356,6 @@
         function closenav() {
             menu.style.right = "-200px";
         }
-
     </script>
 
 
