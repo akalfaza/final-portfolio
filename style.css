@@ -119,7 +119,7 @@ nav .fas{
 
 .work-list{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     /* change minmax (it was 250 before) */
     grid-gap:40px;
     margin-top:50px;
